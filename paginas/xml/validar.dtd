@@ -1,0 +1,49 @@
+<!ELEMENT mascotas (mascota+)>
+
+<!ELEMENT mascota (chip, nombre, fechaNacimiento, pedigree, peso, color, foto, propietario?, vacunacion, visitas)>
+<!ATTLIST mascota
+    id ID #REQUIRED
+    sexo (macho|hembra) #REQUIRED
+    tipoCabello (corto|largo|rizado) #REQUIRED
+>
+
+<!ELEMENT chip (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT fechaNacimiento (#PCDATA)>
+<!ELEMENT pedigree (#PCDATA)>
+
+<!ELEMENT peso (#PCDATA)>
+<!ATTLIST peso
+    unidad CDATA #REQUIRED
+>
+
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT foto (#PCDATA)>
+
+<!ELEMENT propietario (nombre_propietario, apellido, calle, email, telefono)>
+<!ELEMENT nombre_propietario (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+
+<!ELEMENT vacunacion (vacuna*)>
+<!ELEMENT vacuna (nombre, fechaAdministracion, proximaAdministracion?)>
+<!ATTLIST vacuna
+    laboratorio CDATA #IMPLIED
+>
+
+<!ELEMENT fechaAdministracion (#PCDATA)>
+<!ELEMENT proximaAdministracion (#PCDATA)>
+
+<!ELEMENT visitas (visita+)>
+<!ELEMENT visita (fecha, motivo, diagnosticoTratamiento, alta)>
+<!ATTLIST visita
+    id ID #REQUIRED
+    mascotaRef IDREF #REQUIRED
+>
+
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT motivo (#PCDATA)>
+<!ELEMENT diagnosticoTratamiento (#PCDATA)>
+<!ELEMENT alta (#PCDATA)>

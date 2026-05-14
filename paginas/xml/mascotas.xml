@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="mascotas.xsl"?>
+<!DOCTYPE mascotas SYSTEM "validar.dtd">
+<mascotas>
+
+  <!-- M-001: Nala -->
+  <mascota id="M-001" sexo="hembra" tipoCabello="corto">
+    <chip>941000012300001</chip>
+    <nombre>Nala</nombre>
+    <fechaNacimiento>10/03/2021</fechaNacimiento>
+    <pedigree>false</pedigree>
+    <peso unidad="kg">18.5</peso>
+    <color>marrón y blanco</color>
+    <foto>../../imagenes/animales_adopcion/nala.jiff</foto>
+
+    <vacunacion>
+      <vacuna laboratorio="Zoetis">
+        <nombre>Rabia</nombre>
+        <fechaAdministracion>01/04/2024</fechaAdministracion>
+        <proximaAdministracion>01/04/2025</proximaAdministracion>
+      </vacuna>
+      <vacuna laboratorio="Boehringer Ingelheim">
+        <nombre>Polivalente canina</nombre>
+        <fechaAdministracion>01/04/2024</fechaAdministracion>
+        <proximaAdministracion>01/04/2025</proximaAdministracion>
+      </vacuna>
+    </vacunacion>
+
+    <visitas>
+      <visita id="V-2001" mascotaRef="M-001">
+        <fecha>01/04/2024</fecha>
+        <motivo>Vacunación anual y desparasitación</motivo>
+        <diagnosticoTratamiento>Revisión general correcta; administración de vacunas y antiparasitario</diagnosticoTratamiento>
+        <alta>true</alta>
+      </visita>
+      <visita id="V-2002" mascotaRef="M-001">
+        <fecha>15/01/2025</fecha>
+        <motivo>Otitis leve</motivo>
+        <diagnosticoTratamiento>Limpieza ótica y gotas antibióticas 7 días</diagnosticoTratamiento>
+        <alta>true</alta>
+      </visita>
+    </visitas>
+  </mascota>
+
+  <!-- M-002: Neko -->
+  <mascota id="M-002" sexo="macho" tipoCabello="corto">
+    <chip>941000012300002</chip>
+    <nombre>Neko</nombre>
+    <fechaNacimiento>20/01/2024</fechaNacimiento>
+    <pedigree>false</pedigree>
+    <peso unidad="kg">3.2</peso>
+    <color>atigrado marrón</color>
+    <foto>../../imagenes/animales_adopcion/neko.jiff</foto>
+
+    <vacunacion>
+      <vacuna laboratorio="Virbac">
+        <nombre>Trivalente felina (RCP)</nombre>
+        <fechaAdministracion>10/09/2024</fechaAdministracion>
+        <proximaAdministracion>10/09/2025</proximaAdministracion>
+      </vacuna>
+      <vacuna laboratorio="Virbac">
+        <nombre>Leucemia felina</nombre>
+        <fechaAdministracion>24/09/2024</fechaAdministracion>
+        <proximaAdministracion>24/09/2025</proximaAdministracion>
+      </vacuna>
+    </vacunacion>
+
+    <visitas>
+      <visita id="V-2003" mascotaRef="M-002">
+        <fecha>10/09/2024</fecha>
+        <motivo>Primera vacunación</motivo>
+        <diagnosticoTratamiento>Cachorro sano; se pauta calendario vacunal y desparasitación interna</diagnosticoTratamiento>
+        <alta>true</alta>
+      </visita>
+    </visitas>
+  </mascota>
+
+  <!-- M-003: Copito -->
+  <mascota id="M-003" sexo="macho" tipoCabello="corto">
+    <chip>941000012300003</chip>
+    <nombre>Copito</nombre>
+    <fechaNacimiento>05/06/2023</fechaNacimiento>
+    <pedigree>false</pedigree>
+    <peso unidad="kg">1.1</peso>
+    <color>blanco</color>
+    <foto>../../imagenes/animales_adopcion/copito.jiff</foto>
+
+    <vacunacion>
+      <vacuna laboratorio="Boehringer Ingelheim">
+        <nombre>Mixomatosis / VHD</nombre>
+        <fechaAdministracion>10/06/2024</fechaAdministracion>
+        <proximaAdministracion>10/06/2025</proximaAdministracion>
+      </vacuna>
+    </vacunacion>
+
+    <visitas>
+      <visita id="V-2004" mascotaRef="M-003">
+        <fecha>10/06/2024</fecha>
+        <motivo>Vacunación anual conejos</motivo>
+        <diagnosticoTratamiento>Vacuna Mixomatosis/VHD; recomendaciones de alimentación y alojamiento</diagnosticoTratamiento>
+        <alta>true</alta>
+      </visita>
+    </visitas>
+  </mascota>
+
+  <!-- M-004: Rocky -->
+  <mascota id="M-004" sexo="macho" tipoCabello="largo">
+    <chip>941000012300004</chip>
+    <nombre>Rocky</nombre>
+    <fechaNacimiento>18/02/2020</fechaNacimiento>
+    <pedigree>true</pedigree>
+    <peso unidad="kg">32.0</peso>
+    <color>negro y marrón</color>
+    <foto>../../imagenes/animales_adopcion/rocky.jiff</foto>
+
+    <propietario>
+      <nombre_propietario>Carlos</nombre_propietario>
+      <apellido>Sánchez López</apellido>
+      <calle>Carrer Major 45</calle>
+      <email>carlos.sanchez@example.com</email>
+      <telefono>+34 600112233</telefono>
+    </propietario>
+
+    <vacunacion>
+      <vacuna laboratorio="Zoetis">
+        <nombre>Rabia</nombre>
+        <fechaAdministracion>05/03/2024</fechaAdministracion>
+        <proximaAdministracion>05/03/2025</proximaAdministracion>
+      </vacuna>
+      <vacuna laboratorio="Boehringer Ingelheim">
+        <nombre>Polivalente canina</nombre>
+        <fechaAdministracion>05/03/2024</fechaAdministracion>
+        <proximaAdministracion>05/03/2025</proximaAdministracion>
+      </vacuna>
+    </vacunacion>
+
+    <visitas>
+      <visita id="V-2005" mascotaRef="M-004">
+        <fecha>05/03/2024</fecha>
+        <motivo>Revisión anual y vacunación</motivo>
+        <diagnosticoTratamiento>Exploración normal; se actualiza vacunación y se recomienda control de peso</diagnosticoTratamiento>
+        <alta>true</alta>
+      </visita>
+      <visita id="V-2006" mascotaRef="M-004">
+        <fecha>12/10/2024</fecha>
+        <motivo>Cojea de la extremidad posterior izquierda</motivo>
+        <diagnosticoTratamiento>Sospecha de esguince leve; antiinflamatorio 5 días y reposo</diagnosticoTratamiento>
+        <alta>true</alta>
+      </visita>
+    </visitas>
+  </mascota>
+
+  <!-- M-005: Pixel -->
+  <mascota id="M-005" sexo="macho" tipoCabello="corto">
+    <chip>941000012300005</chip>
+    <nombre>Pixel</nombre>
+    <fechaNacimiento>01/05/2024</fechaNacimiento>
+    <pedigree>false</pedigree>
+    <peso unidad="kg">0.08</peso>
+    <color>gris y blanco</color>
+    <foto>../../imagenes/animales_adopcion/pixel.jiff</foto>
+
+    <vacunacion>
+      <!-- Hamster: no requieren registro -->
+    </vacunacion>
+
+    <visitas>
+      <visita id="V-2007" mascotaRef="M-005">
+        <fecha>02/09/2024</fecha>
+        <motivo>Revisión general nuevo animal</motivo>
+        <diagnosticoTratamiento>Revisión sin hallazgos; recomendaciones de manejo y enriquecimiento ambiental</diagnosticoTratamiento>
+        <alta>true</alta>
+      </visita>
+    </visitas>
+  </mascota>
+
+  <!-- M-006: Mía -->
+  <mascota id="M-006" sexo="hembra" tipoCabello="corto">
+    <chip>941000012300006</chip>
+    <nombre>Mía</nombre>
+    <fechaNacimiento>14/07/2022</fechaNacimiento>
+    <pedigree>false</pedigree>
+    <peso unidad="kg">3.8</peso>
+    <color>tricolor</color>
+    <foto>../../imagenes/animales_adopcion/mia.jiff</foto>
+
+    <propietario>
+      <nombre_propietario>Anna</nombre_propietario>
+      <apellido>Puig Ferrer</apellido>
+      <calle>Avinguda del Bosc 12</calle>
+      <email>anna.puig@example.org</email>
+      <telefono>+34 622334455</telefono>
+    </propietario>
+
+    <vacunacion>
+      <vacuna laboratorio="Virbac">
+        <nombre>Trivalente felina (RCP)</nombre>
+        <fechaAdministracion>20/08/2024</fechaAdministracion>
+        <proximaAdministracion>20/08/2025</proximaAdministracion>
+      </vacuna>
+    </vacunacion>
+
+    <visitas>
+      <visita id="V-2008" mascotaRef="M-006">
+        <fecha>20/08/2024</fecha>
+        <motivo>Revisión anual y vacunación</motivo>
+        <diagnosticoTratamiento>Gata en buen estado; se actualiza vacuna y se recomienda control dental</diagnosticoTratamiento>
+        <alta>true</alta>
+      </visita>
+    </visitas>
+  </mascota>
+
+</mascotas>
